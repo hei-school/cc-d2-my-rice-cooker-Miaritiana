@@ -60,14 +60,15 @@ public:
     {
         try
         {
-            if (newContent.getQuantity() > getCapacity())
+            while (newContent.getQuantity() > getCapacity())
             {
-                cerr << "Out of capacity" << endl;
+                cerr << "Out of capacity. Please enter a quantity within capacity: ";
+                double newQuantity;
+                cin >> newQuantity;
+                newContent.setQuantity(newQuantity);
             }
-            else
-            {
-                content = newContent;
-            }
+
+            content = newContent;
         }
         catch (const std::exception &e)
         {
@@ -132,8 +133,11 @@ int main()
 {
     string ingredient;
     double quantity;
+    double capacity;
 
     cout << "Welcome to rice-cooker" << endl;
+    cout << "Capacity: ";
+    cin >>  capacity;
     cout << "What are you going to cook ?" << endl;
     cout << "Ingredient: ";
     cin >> ingredient;
@@ -142,6 +146,7 @@ int main()
 
     RiceCooker riceCooker;
     Content contents;
+    riceCooker.setCapacity(capacity);
     contents.setName(ingredient);
     contents.setQuantity(quantity);
     riceCooker.setContent(contents);
