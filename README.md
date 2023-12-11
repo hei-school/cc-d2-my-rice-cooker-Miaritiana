@@ -1,4 +1,5 @@
 # Rice cooker
+## description
 The Rice-cooker program is an application that simulates a rice cooker. It allows users to set the capacity, choose ingredients, and cook rice either immediately or schedule it for later. The program supports both automatic and manual cooking modes, enabling users to customize cooking duration and temperature settings.
 
 
