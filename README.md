@@ -41,9 +41,5 @@ Before you begin, ensure you have the following prerequisites installed:
 
 6. Follow the on-screen prompts to set the capacity, choose ingredients, and configure cooking options.
 
----
-
-Feel free to customize this template based on the specific details of your C version of the Rice-cooker program. Include any additional information that users may find helpful.
-
 
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/PHq8Kfj_)
